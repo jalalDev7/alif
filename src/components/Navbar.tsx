@@ -17,7 +17,7 @@ const Navbar = () => {
       <div className="flex flex-row gap-4 text-nowrap">
         <Link href="/">Home</Link>
         <Link href="/find">Find</Link>
-        <Link href="/">Give</Link>
+        <Link href="/give">Give</Link>
         <Link href="/">Help</Link>
         <Link href="/">Join us</Link>
       </div>

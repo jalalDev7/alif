@@ -83,18 +83,18 @@ const FindSection = () => {
           Waiting for a Loving Home
         </h1>
       </div>
-      <div className="flex flex-row items-center w-full md:w-fit justify-center mt-4 md:mt-0 rounded-full bg-white/35  border border-white px-4 py-2 gap-2">
+      <div className="flex flex-row items-center w-full md:w-fit justify-center mt-4 md:mt-0 rounded-full bg-white/35  border border-white px-2 md:px-4 py-2 gap-1 md:gap-2">
         <div className="relative pl-8">
           <IoSearchSharp className="absolute size-8 top-1/2 left-1 -translate-y-1/2" />
           <Input
             type="text"
-            className="bg-transparent border-none focus-visible:ring-offset-0 text-xl focus-visible:ring-0 w-full md:w-[500px]"
+            className="bg-transparent border-none focus-visible:ring-offset-0 text-xl focus-visible:ring-0 w-full md:w-[300px] 2xl:w-[500px]"
             placeholder="Search"
           />
         </div>
         <Select>
-          <SelectTrigger className="w-[250px]  bg-transparent border-none text-xl focus:ring-0 focus:ring-offset-0">
-            <SelectValue placeholder="Select a location" />
+          <SelectTrigger className="w-[100px] md:w-[150px]  bg-transparent border-none text-sm md:text-xl focus:ring-0 focus:ring-offset-0">
+            <SelectValue placeholder="Location" />
           </SelectTrigger>
           <SelectContent>
             <SelectGroup>
@@ -149,8 +149,8 @@ const FindSection = () => {
           </SelectContent>
         </Select>
         <Select>
-          <SelectTrigger className="w-[250px]  bg-transparent border-none text-xl focus:ring-0 focus:ring-offset-0">
-            <SelectValue placeholder="Select a category" />
+          <SelectTrigger className="w-[100px] md:w-[150px]  bg-transparent border-none text-sm md:text-xl focus:ring-0 focus:ring-offset-0">
+            <SelectValue placeholder="Category" />
           </SelectTrigger>
           <SelectContent>
             <SelectGroup>
@@ -256,9 +256,9 @@ const FindSection = () => {
             </SelectGroup>
           </SelectContent>
         </Select>
-        <button className="flex flex-row items-center justify-center px-4 text-xl gap-2">
+        <button className="flex flex-row items-center justify-center px-4 tsxt-sm md:text-xl gap-2">
           Find
-          <IoMdArrowRoundForward className="size-6" />
+          <IoMdArrowRoundForward className="size-4 md:size-6" />
         </button>
       </div>
       <div className="flex flex-col md:flex-row w-full gap-4">
