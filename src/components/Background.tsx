@@ -5,7 +5,7 @@ const Background = () => {
   return (
     <div className="flex flex-col w-full min-h-screen fixed z-0 filter brightness-50">
       <Image
-        src="/home-background.webp"
+        src="/background.jpg"
         fill
         alt="backround"
         className="object-cover"

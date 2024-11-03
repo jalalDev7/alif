@@ -10,7 +10,7 @@ const page = () => {
       <Background />
       <Wrapper>
         <div className="flex flex-col w-full ">
-          <Navbar />
+          <Navbar active="give" />
           <GiveSection />
         </div>
       </Wrapper>

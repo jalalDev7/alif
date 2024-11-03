@@ -67,7 +67,7 @@ const GiveForm = () => {
                 name="petTitle"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel>Title :</FormLabel>
+                    <FormLabel className="font-semibold">Title :</FormLabel>
                     <FormControl>
                       <Input
                         type="text"
@@ -86,7 +86,9 @@ const GiveForm = () => {
                 name="petDesc"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel>Description :</FormLabel>
+                    <FormLabel className="font-semibold">
+                      Description :
+                    </FormLabel>
                     <FormControl>
                       <Textarea
                         {...field}
@@ -104,7 +106,7 @@ const GiveForm = () => {
                 name="petCat"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel>Category :</FormLabel>
+                    <FormLabel className="font-semibold">Category :</FormLabel>
                     <FormControl>
                       <Select {...field}>
                         <SelectTrigger className="w-full bg-transparent">
@@ -129,7 +131,7 @@ const GiveForm = () => {
                 name="petLocation"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel>Location :</FormLabel>
+                    <FormLabel className="font-semibold">Location :</FormLabel>
                     <FormControl>
                       <Select {...field}>
                         <SelectTrigger className="w-full bg-transparent">
@@ -150,15 +152,15 @@ const GiveForm = () => {
               />
             </div>
             <div className="flex flex-col w-full gap-2 mt-2">
-              <FormLabel>Pictures :</FormLabel>
-              <div className="flex flex-row w-full rounded-lg border border-white items-center justify-between p-2">
-                <h3 className="text-sm flex w-full">Upload pictures :</h3>
-                <button className="flex p-1 rounded-full text-nowrap border border-white font-semibold  text-lg ">
-                  <IoIosAddCircle className="size-6 " />
-                </button>
-              </div>
-              <div className="flex flex-col w-full h-[270px] border border-white rounded-lg p-2 overflow-auto gap-2">
-                <FormLabel>Pictures :</FormLabel>
+              <div className="flex flex-col w-full h-[300px] border border-white rounded-lg p-2 overflow-auto gap-2">
+                <div className="flex flex-row items-center justify-between mb-4">
+                  <FormLabel className="flex w-full font-semibold">
+                    Upload pictures :
+                  </FormLabel>
+                  <button className="flex p-1 rounded-full text-nowrap border border-white  text-lg ">
+                    <IoIosAddCircle className="size-6 " />
+                  </button>
+                </div>
                 <div className="flex flex-row w-full rounded-lg border border-white items-center justify-between p-2">
                   <div className="flex flex-row items-center w-full gap-4">
                     <Image
@@ -240,7 +242,9 @@ const GiveForm = () => {
                 name="petVideo"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel>Video link :</FormLabel>
+                    <FormLabel className="font-semibold">
+                      Video link :
+                    </FormLabel>
                     <FormControl>
                       <Input
                         type="text"
@@ -254,8 +258,8 @@ const GiveForm = () => {
                   </FormItem>
                 )}
               />
-              <div className="flex w-full items-end justify-end">
-                <button className="flex px-4 py-1 rounded-lg text-nowrap border border-white font-semibold backdrop-blur-sm bg-white/25 text-lg ">
+              <div className="flex w-full  items-end justify-end mt-2">
+                <button className="flex px-4 py-1 rounded-lg text-nowrap  font-semibold bg-green-700 text-lg ">
                   Create
                 </button>
               </div>

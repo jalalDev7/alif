@@ -5,13 +5,13 @@ import React from "react";
 const HeroSection = () => {
   return (
     <div className="flex flex-col-reverse md:flex-row w-full p-4 md:p-8 gap-4 md:gap-8 text-white">
-      <div className="flex w-fit items-center justify-center min-h-96 ">
+      <div className="flex w-fit items-center justify-center ">
         <Image
-          src="/pet-hero.jpg"
+          src="/pet-hero.png"
           width={1000}
           height={400}
           alt="hero-image"
-          className="rounded-lg object-cover drop-shadow-lg"
+          className="rounded-lg object-cover drop-shadow-2xl"
         />
       </div>
       <div className="flex flex-col w-full justify-center mt-4 md:mt-0">
@@ -33,16 +33,16 @@ const HeroSection = () => {
         </p>
         <div className="flex flex-row w-full items-center justify-center md:justify-end  mt-8 gap-4">
           <Link
-            href="/"
+            href="/find"
             className="flex text-md md:text-xl font-medium border border-white rounded-lg px-3 md:px-6 py-2 shadow-md"
           >
-            <span className="drop-shadow-lg">More about us</span>
+            <span className="drop-shadow-lg">Find</span>
           </Link>
           <Link
-            href="/"
+            href="/give"
             className="flex bg-white/10 backdrop-blur-sm text-md md:text-xl font-semibold border border-white rounded-lg px-3 md:px-6 py-2 shadow-md"
           >
-            <span className="drop-shadow-lg">Join us</span>
+            <span className="drop-shadow-lg">Give</span>
           </Link>
         </div>
       </div>

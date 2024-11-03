@@ -10,7 +10,7 @@ export default function Home() {
       <Background />
       <Wrapper>
         <div className="flex flex-col w-full ">
-          <Navbar />
+          <Navbar active="home" />
           <HeroSection />
           <HeroFooter />
         </div>
